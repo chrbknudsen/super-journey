@@ -1,6 +1,10 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
+  build_website:
+    runs-on: ubuntu-latest
+    env:
+      RSPM: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
