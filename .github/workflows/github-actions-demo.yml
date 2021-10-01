@@ -5,6 +5,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       RSPM: "https://packagemanager.rstudio.com/cran/__linux__/focal/latest"
+    steps:
+      - name: Render markdown
+        run: make site
   Explore-GitHub-Actions:
     runs-on: ubuntu-latest
     steps:
